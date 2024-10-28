@@ -1,0 +1,50 @@
+/* Basic styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 30px); /* 16 columns */
+    grid-template-rows: repeat(13, 30px); /* 13 rows */
+    gap: 5px; /* Space between squares */
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: #4caf50;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.square:hover {
+    background-color: #ff5722; /* Change color on hover */
+}
+
+.column{
+    display: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-heading{
+    display: flex;
+    justify-content: center;
+}
+
+.labeled {
+    background-color: #cccccc;  /* Different color for labeled squares */
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Make labeled squares non-clickable */
+}
